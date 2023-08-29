@@ -1,0 +1,36 @@
+{
+  "customReportApp": {
+    "jmdUser": {
+      "home": {
+        "title": "JmdUsers",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Jmd User",
+        "createOrEditLabel": "Créer ou éditer un Jmd User",
+        "notFound": "Aucun Jmd User trouvé"
+      },
+      "created": "Un nouveau Jmd User a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Jmd User avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Jmd User avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Jmd User {{ id }} ?"
+      },
+      "detail": {
+        "title": "Jmd User"
+      },
+      "id": "ID",
+      "prmid": "Prmid",
+      "jmdRole": "Jmd Role",
+      "jmdClass": "Jmd Class",
+      "name": "Name",
+      "phone": "Phone",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "salesData": "Sales Data",
+      "retailer": "Retailer",
+      "jmdo": "Jmdo"
+    }
+  }
+}

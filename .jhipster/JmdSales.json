@@ -1,0 +1,65 @@
+{
+  "applications": ["CustomReport"],
+  "changelogDate": "20230829140602",
+  "dto": "mapstruct",
+  "entityTableName": "jmd_sales",
+  "fields": [
+    {
+      "fieldName": "prmid",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "unisOrder",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "unitsDelivered",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "unisActivated",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jmdMonth",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jmdYear",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jmddate",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "JmdSales",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "jmdUser",
+      "otherEntityRelationshipName": "salesData",
+      "relationshipName": "retailer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

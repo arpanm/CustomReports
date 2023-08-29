@@ -1,0 +1,11 @@
+id;prmid;jmd_role;jmd_class;name;phone;is_active;created_by;created_on;updated_by;updated_on
+1;21507;JmdAdmin;XClass;Minivan Southeast circuit;24890;true;24965;2023-08-29;27375;2023-08-28
+2;19575;Jmdo;EClass;Guam Hodkiewicz;17450;false;16562;2023-08-29;19868;2023-08-29
+3;17185;Jmdo;EClass;copy payment fetch;9373;true;27777;2023-08-29;6383;2023-08-29
+4;13468;Retailer;AClass;eyeballs rain;21982;false;26517;2023-08-29;25814;2023-08-29
+5;19185;JmdAdmin;BClass;invoice Principal Toys;24870;true;19257;2023-08-29;16359;2023-08-29
+6;8290;Retailer;AClass;incubate candela;15857;false;28471;2023-08-28;26026;2023-08-29
+7;30153;Retailer;AStarClass;Beauty;114;true;12363;2023-08-28;8500;2023-08-29
+8;27512;Jmdo;CClass;duh;25362;true;2310;2023-08-29;11333;2023-08-29
+9;18442;Jmdo;BClass;whose Infrastructure violet;7930;false;29377;2023-08-29;8399;2023-08-28
+10;14771;Jmdo;XClass;Southwest;29479;true;6698;2023-08-29;19841;2023-08-29

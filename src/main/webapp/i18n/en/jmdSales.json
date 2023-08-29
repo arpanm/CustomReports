@@ -1,0 +1,35 @@
+{
+  "customReportApp": {
+    "jmdSales": {
+      "home": {
+        "title": "Jmd Sales",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Jmd Sales",
+        "createOrEditLabel": "Create or edit a Jmd Sales",
+        "notFound": "No Jmd Sales found"
+      },
+      "created": "A new Jmd Sales is created with identifier {{ param }}",
+      "updated": "A Jmd Sales is updated with identifier {{ param }}",
+      "deleted": "A Jmd Sales is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jmd Sales {{ id }}?"
+      },
+      "detail": {
+        "title": "Jmd Sales"
+      },
+      "id": "ID",
+      "prmid": "Prmid",
+      "unisOrder": "Unis Order",
+      "unitsDelivered": "Units Delivered",
+      "unisActivated": "Unis Activated",
+      "jmdMonth": "Jmd Month",
+      "jmdYear": "Jmd Year",
+      "jmddate": "Jmddate",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "retailer": "Retailer"
+    }
+  }
+}
