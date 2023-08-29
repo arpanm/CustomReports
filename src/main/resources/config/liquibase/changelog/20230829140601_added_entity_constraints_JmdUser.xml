@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity JmdUser.
+    -->
+    <changeSet id="20230829140601-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="jmd_user_id"
+                                 baseTableName="rel_jmd_user__retailer"
+                                 constraintName="fk_rel_jmd_user__retailer__jmd_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jmd_user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="retailer_id"
+                                 baseTableName="rel_jmd_user__retailer"
+                                 constraintName="fk_rel_jmd_user__retailer__retailer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jmd_user"
+                                 />
+    </changeSet>
+</databaseChangeLog>

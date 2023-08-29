@@ -1,0 +1,10 @@
+{
+  "customReportApp": {
+    "JmdRole": {
+      "null": "",
+      "Jmdo": "Jmdo",
+      "Retailer": "Retailer",
+      "JmdAdmin": "JmdAdmin"
+    }
+  }
+}

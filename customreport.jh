@@ -1,0 +1,74 @@
+
+entity JmdUser {
+	prmid Long,
+    jmdRole JmdRole,
+    jmdClass JmdClass,
+    name String,
+    phone Long,
+    isActive Boolean,
+    createdBy Long,
+    createdOn LocalDate,
+    updatedBy Long,
+    updatedOn LocalDate
+}
+
+entity JmdSales {
+    prmid Long,
+    unisOrder Long,
+    unitsDelivered Long,
+    unisActivated Long,
+    jmdMonth Long,
+    jmdYear Long,
+    jmddate Long,
+    createdBy Long,
+    createdOn LocalDate,
+    updatedBy Long,
+    updatedOn LocalDate
+}
+
+
+enum JmdRole {
+	Jmdo,
+    Retailer,
+    JmdAdmin
+}
+
+enum JmdClass {
+	AClass,
+    APlusClass,
+    AStarClass,
+    BClass,
+    CClass,
+    DClass,
+    EClass,
+    XClass
+}
+
+relationship ManyToMany {
+    JmdUser{retailer} to JmdUser{jmdo}
+}
+
+relationship OneToMany {
+    JmdUser{salesData} to JmdSales{retailer}
+}
+
+
+application {
+  config {
+    baseName CustomReport
+    applicationType monolith
+    serverPort 9001
+    devDatabaseType mysql
+    prodDatabaseType mysql
+    clientFramework react
+    clientPackageManager npm
+    authenticationType jwt
+    buildTool maven
+    enableSwaggerCodegen true
+    packageName com.report.customreport
+  }
+  entities *
+  dto * with mapstruct
+  paginate * with infinite-scroll
+  service all with serviceImpl
+}

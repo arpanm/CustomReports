@@ -1,0 +1,77 @@
+{
+  "applications": ["CustomReport"],
+  "changelogDate": "20230829140601",
+  "dto": "mapstruct",
+  "entityTableName": "jmd_user",
+  "fields": [
+    {
+      "fieldName": "prmid",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jmdRole",
+      "fieldType": "JmdRole",
+      "fieldValues": "Jmdo,Retailer,JmdAdmin"
+    },
+    {
+      "fieldName": "jmdClass",
+      "fieldType": "JmdClass",
+      "fieldValues": "AClass,APlusClass,AStarClass,BClass,CClass,DClass,EClass,XClass"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "JmdUser",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "jmdSales",
+      "otherEntityRelationshipName": "retailer",
+      "relationshipName": "salesData",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "jmdUser",
+      "otherEntityRelationshipName": "jmdo",
+      "relationshipName": "retailer",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "jmdUser",
+      "otherEntityRelationshipName": "retailer",
+      "relationshipName": "jmdo",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
